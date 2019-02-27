@@ -1,6 +1,7 @@
 import random
-import tabulate
+
 import numpy as np
+import tabulate
 
 
 class IllegalMoveError(Exception):
