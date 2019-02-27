@@ -73,7 +73,7 @@ class Agent:
         model.add(LeakyReLU())
         model.add(Dense(32, activation='linear'))
         model.add(LeakyReLU())
-        model.add(Dense(self.number_of_fields, activation='elu'))
+        model.add(Dense(self.number_of_fields, activation='linear'))
         model.compile(optimizer='adam', loss='mean_squared_error')
 
         return model
